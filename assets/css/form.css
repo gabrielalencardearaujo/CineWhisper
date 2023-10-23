@@ -1,7 +1,7 @@
 .containerForm {
   background-color: #142864;
   height:  110vh;
-  width: 720px;
+  max-width: 720px;
   position: absolute;
   top: 0px;
   z-index: 8;
@@ -33,6 +33,20 @@ form div {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  position: relative;
+}
+
+form div .eyePassword {
+  width: 35px;
+  height: 25px;
+  flex-shrink: 0;
+  position: absolute;
+  right: 20px;
+  top: calc(50% + 4px);
+}
+
+form div .eyePassword path {
+  fill: rgb(153, 153, 153);
 }
 
 form label {
@@ -70,6 +84,7 @@ form input:focus {
 
 .divButtons {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
