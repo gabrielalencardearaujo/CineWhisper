@@ -71,7 +71,7 @@ form input {
 }
 
 form input::placeholder {
-  color: rgba(153, 153, 153, 0.5);
+  color: rgb(153 153 153 / 0.5);
 }
 
 form input:hover {
@@ -87,6 +87,7 @@ form input:focus {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
 
 .divButtons a {
