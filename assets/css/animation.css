@@ -2,20 +2,20 @@
 .bg-1 {
   background: url('../img/background1.png');
   top: -100px;
-  animation: animeRightLeft 1200s infinite;
+  animation: animeRightLeft 1400s infinite;
 }
 
 .bg-2 {
   background: url('../img/background2.png');
   top: 290px;
-  animation: animeLeftRight 1200s infinite;
+  animation: animeLeftRight 1400s infinite;
 
 }
 
 .bg-3 {
   background: url('../img/background3.png');
   top: 680px;
-  animation: animeRightLeft 1200s infinite;
+  animation: animeRightLeft 1400s infinite;
 }
 
 .backgroundContainer {
