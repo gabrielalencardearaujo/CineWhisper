@@ -1,0 +1,61 @@
+.bodyNews {
+  overflow: auto;
+  background-color: white;
+}
+
+header {
+  position: initial;
+}
+
+.containerNews {
+  width: 85vw;
+  margin: 0 auto;
+  margin-top: 120px;
+  display: grid;
+  gap: 140px;
+}
+
+.containerNews h1 {
+  margin-bottom: -76px;
+  font-size: 40px;
+}
+
+.containerNews > div {
+  display: flex;
+  gap: 140px;
+}
+
+.containerNews  .text {
+  display: grid;
+  padding: 30px 0px;
+  gap: 60px;
+}
+.containerNews h3 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.containerNews p {
+  font-size: 20px;
+  font-weight: 700;
+  font-weight: normal;
+}
+
+.linkVejaMais {
+  display: flex;
+  justify-content: end;
+}
+
+.linkVejaMais a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--color-secondary-5);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-neutral-1);
+  margin-top: 120px;
+}
