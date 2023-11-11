@@ -24,7 +24,7 @@ function validInputs(key, value) {
   const validRegex = mountRegex.test(value.trim());
   if(key == 'password') validFieldsInput[key].value = value;
 
-  if(key == 'confPassword' && validFieldsInput[key].value != value) return msgError.textContent = validFieldsInput[key].error;
+  if(key == 'confPassword' && validFieldsInput.password.value != value) return msgError.textContent = validFieldsInput[key].error;
 
   if(!validRegex) return msgError.textContent = validFieldsInput[key].error;
   else return true
@@ -40,5 +40,5 @@ onsubmit = (event) => {
 
   if(allInputs[2].value != allInputs[3].value) return;
 
-  event.currentTarget.submit();
+  event.target.submit();
 }
