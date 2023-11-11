@@ -16,7 +16,7 @@ const validFieldsInput = {
 }
 
 // Inputs Validation:
-function validInputs(key, value) {
+const validInputs = (key, value) => {
   const msgError = document.querySelector(`#${key} + .msgError`);
   msgError.textContent = '';
 
