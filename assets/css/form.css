@@ -132,6 +132,11 @@ form input:focus {
   animation: animeArrow .8s infinite;
 }
 
+.msgError {
+  color: rgb(253, 132, 110);
+  font-size: 1.1rem;
+}
+
 
 @keyframes animeArrow {
   0% {
