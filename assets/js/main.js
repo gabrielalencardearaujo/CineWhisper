@@ -30,6 +30,7 @@ function validInputs(key, value) {
   else return true
 }
 
+// Event submit
 onsubmit = (event) => {
   event.preventDefault();
   const allInputs = document.querySelectorAll('input')

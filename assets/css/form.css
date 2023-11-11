@@ -42,7 +42,7 @@ form div .eyePassword {
   flex-shrink: 0;
   position: absolute;
   right: 20px;
-  top: calc(50% + 4px);
+  top: 15px
 }
 
 form div .eyePassword path {
