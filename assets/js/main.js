@@ -39,7 +39,5 @@ onsubmit = (event) => {
     if(validInputs(input.name, input.value) !== true) return;
   }
 
-  if(allInputs[2].value != allInputs[3].value) return;
-
   event.target.submit();
 }
