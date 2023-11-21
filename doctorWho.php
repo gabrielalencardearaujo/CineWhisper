@@ -12,7 +12,7 @@
       <sup>Autor: Beltrano Rodrigues</sup>
     </article>
     <p>
-      <img src="./assets/img/aquamanNews.jpeg" alt="">
+      <img src="./assets/img/doctorWhoNews.jpg" alt="">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere similique aliquam omnis doloribus reprehenderit pariatur maiores dolorem, alias quidem impedit, magnam officiis nostrum neque molestias cupiditate vero distinctio, nam numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, sint necessitatibus! Officia animi at aliquam, natus dignissimos esse suscipit aliquid quia, et voluptate eaque consequuntur libero tempore quae vero.
       <br>
       <br>
