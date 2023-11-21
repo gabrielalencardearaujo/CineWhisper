@@ -15,7 +15,6 @@
     header('Location: ../../login.php?login=errorLogin');
   } else if(qtd == 1) {
     $userValid = true;
-    $row = $res->fetch_Object();
   } else {
     header('Location: ../../login.php?login=AlgoInesperadoAconteceu');
   };
@@ -26,6 +25,6 @@
     header('Location: ../../login.php?login=errorLogin');
   } else {
     $_SESSION['authentication'] = 'sim';
-    $_SESSION['User'] = $row->email;
+    $_SESSION['User'] = $email;
     header('Location: ../../news.php');
   }

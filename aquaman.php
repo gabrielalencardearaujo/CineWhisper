@@ -56,7 +56,7 @@
 
     <div class="newComment">
       <h3>Novo Comentario</h3>
-      <form action="./assets/database/getNewComment.php" method='POST' >
+      <form action="./assets/modules/getNewComment.php" method='POST' >
         <textarea name="newComment" ></textarea>
         <div class="divButtons">
           <button type="submit">
@@ -71,33 +71,3 @@
 
 </body>
 </html>
-
-<!-- <h3>Comentários</h3>
-    <ul>
-      <li>
-        <h4>Fulano de tal</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptates. Exercitationem excepturi est nesciunt perspiciatis beatae. Cupiditate suscipit, placeat modi recusandae reiciendis eius itaque sed eveniet magnam amet architecto corrupti!
-        </p>
-        <div class="btnLikes">
-          <abbr title="Gostei"><img class="like" src="./assets/img/btnLike.svg" alt=""></abbr>
-          <abbr title="Nao Gostei"><img class="dislike" src="./assets/img/btnLike.svg" alt=""></abbr>
-        </div>
-      </li>
-
-      <li>
-        <h4>Cicrano da Silva</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur exercitationem placeat quaerat ab explicabo distinctio. Numquam, alias id. Omnis repudiandae voluptatibus, dicta amet optio sed? Labore expedita unde error itaque.</p>
-        <div class="btnLikes">
-          <abbr title="Gostei"><img class="like" src="./assets/img/btnLike.svg" alt=""></abbr>
-          <abbr title="Nao Gostei"><img class="dislike" src="./assets/img/btnLike.svg" alt=""></abbr>
-        </div>
-      </li>
-      <li>
-        <h4>Beltrano de Souza</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium inventore itaque sit nulla explicabo dolor dignissimos fugit distinctio veritatis, eos ea? Possimus sequi maxime debitis fugiat animi iure dolor amet?</p>
-        <div class="btnLikes">
-          <abbr title="Gostei"><img class="like" src="./assets/img/btnLike.svg" alt=""></abbr>
-          <abbr title="Nao Gostei"><img class="dislike" src="./assets/img/btnLike.svg" alt=""></abbr>
-        </div>
-      </li>
-    </ul> -->

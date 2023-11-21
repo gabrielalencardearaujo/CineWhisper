@@ -16,15 +16,13 @@
     header('Location: ../../index.php?register=UserExist');
   }
 
-  $_SESSION['User'] = $name;
-
   $insertSQL = "INSERT INTO tb_users (name, email, password) VALUES ('{$name}', '{$email}', '{$password}')";
 
   $resInsert = $conn->query($insertSQL);
 
   if($resInsert == true) {
     $_SESSION['authentication'] = 'sim';
-    $_SESSION['User'] = $row->email;
+    $_SESSION['User'] = $email;
     header('Location: ../../sendForm.php');
   } else {
     header('Location: ../../index.php?register=ErrorRegister');
