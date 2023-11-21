@@ -12,8 +12,5 @@
     $sql = "INSERT INTO tb_comments (comment, e_user, id_user, name) VALUES ($textComment, $userLogin, $row->id_user, $row->name)";
   } 
 
-  echo '<pre>';
-  echo $_POST['newComment'] . '<br>';
-  echo $_SESSION['User'];
-  echo '<pre>';
-  echo 'Comentario feito';
+  $conn->close();
+  

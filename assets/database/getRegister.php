@@ -27,4 +27,7 @@
   } else {
     header('Location: ../../index.php?register=ErrorRegister');
   }
+
+  $conn->close();
+
 ?>

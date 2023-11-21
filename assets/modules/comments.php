@@ -29,6 +29,8 @@
     }
   }
 
+  $conn->close();
+
   // print "
   //   <li>
   //     <h4>Fulano de tal</h4>

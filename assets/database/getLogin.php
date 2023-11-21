@@ -28,3 +28,5 @@
     $_SESSION['User'] = $email;
     header('Location: ../../news.php');
   }
+
+  $conn->close();
