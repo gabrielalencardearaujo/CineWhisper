@@ -9,7 +9,6 @@
   background: url('../img/background2.png');
   top: 290px;
   animation: animeLeftRight 1400s infinite;
-
 }
 
 .bg-3 {
@@ -28,7 +27,8 @@
   position: absolute;
 }
 
-.fume {
+.login .fume,
+.cadastro .fume {
   width: 100vw;
   height: 100vh;
   background-color: rgb(0 0 0 / 0.2);

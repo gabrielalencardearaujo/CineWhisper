@@ -13,5 +13,4 @@
   echo $form['password'];
   echo '</pre>';
   echo '<hr>';
-
 ?>

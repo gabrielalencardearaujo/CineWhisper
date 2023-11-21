@@ -15,6 +15,7 @@
   --color-neutral-2: rgb(0 0 0 / 0.2);
 
   --font-family-1: 'Roboto', sans-serif;
+  --font-family-mono: monospace;
 } 
 
 * {
