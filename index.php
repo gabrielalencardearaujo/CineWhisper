@@ -1,58 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CineWhisper | Sign Up</title>
-
-  <!-- Styles Css -->
-  <link rel="stylesheet" href="./assets/css/stylesGeral.css">
-  <link rel="stylesheet" href="./assets/css/headerStyle.css">
-  <link rel="stylesheet" href="./assets/css/form.css">
-  <link rel="stylesheet" href="./assets/css/animation.css">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<?php include_once "./assets/modules/head.php" ?>
 </head>
 
 <body class="cadastro">
-  <header>
-    <div class="container divHeader">
-      <div class="logo">
-        <a href="/news.html">
-          <p><span class="detailsColor">C</span>ine<span class="detailsColor">W</span>hisper</p>
-        </a>
-      </div>
-      <ul>
-        <li>
-          <a href="./news.html">Notícias</a>
-        </li>
-        <li>
-          <a href="">Filmes</a>
-        </li>
-        <li>
-          <a href="">Séries</a>
-        </li>
-        <li>
-          <a class="login" href="" enabled>
-            <svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-              <path fill="##FF6347"
-                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z" />
-            </svg>
-            Login
-          </a>
-        </li>
-      </ul>
-    </div>
-  </header>
+  <?php include_once "./assets/modules/header.php" ?>
+
   <section class="containerForm">
     <p><span class="detailsColor">Cine Whisper</span> é sua newsletter semanal de cinema, entregando análises de filmes,
       recomendações, notícias e curiosidades diretamente na sua caixa de entrada. Feita para os apaixonados por cinema
       que desejam se manter atualizados e descobrir os melhores filmes. Cadastre-se já e fique por dentro do universo
       cinematográfico a cada edição.</p>
-    <form id="formSignUp" action="./sendForm.html" method="GET">
+    <form id="formSignUp" action="./assets/database/getRegister.php" method="POST">
       <div>
         <label for="name">Nome:</label>
         <input id="name" type="text" name="name" placeholder="Seu nome" required>
@@ -84,7 +41,7 @@
       </div>
 
       <div class="divButtons">
-        <p>Já tem uma conta? Faça o <a href="./login.html">Login</a>.</p>
+        <p>Já tem uma conta? Faça o <a href="./login.php">Login</a>.</p>
         <button type="submit">
           Cadastrar
           <svg width="29" height="19" viewBox="0 0 29 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,11 +54,7 @@
     </form>
   </section>
 
-  <div class="backgroundContainer bg-1"></div>
-  <div class="backgroundContainer bg-2"></div>
-  <div class="backgroundContainer bg-3"></div>
-  <div class="fume"></div>
-
+  <?php include_once "./assets/modules/backGround.php" ?>
 
   <script src="./assets/js/main.js"></script>
 </body>
