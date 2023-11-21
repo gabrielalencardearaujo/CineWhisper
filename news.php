@@ -15,7 +15,7 @@
         <p>Wan decidiu desmenti-los e revelou o que seria a verdade sobre o tempo de refilmagens. “Provavelmente fizemos
           sete ou oito dias [de refilmagens], o que não é nada para um filme desse tamanho”,</p>
         <div class="linkVejaMais">
-          <a href="./aquaman.php">Clique e veja mais.</a>
+          <a href="./aquaman.php?post=1">Clique e veja mais.</a>
         </div>
       </div>
     </div>
@@ -26,7 +26,7 @@
         <p>Nesta segunda-feira (23), a BBC anunciou que o 15º ano da série moderna já está em produção, mesmo antes de o
           14º começar a ser exibido.</p>
           <div class="linkVejaMais">
-            <a href="./doctorWho.php">Clique e veja mais.</a>
+            <a href="./doctorWho.php?post=2">Clique e veja mais.</a>
           </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
         <h3>Invasão | Vídeo exclusivo mostra bastidores da 2ª temporada</h3>
         <p>Invasão é uma série dramática de ficção científica, que segue uma invasão alienígena por meio de diferentes personagens ao redor do mundo. Com dez episódios, a segunda temporada começa apenas alguns meses depois da primeira, com os alienígenas intensificando seus ataques em uma guerra total contra os humanos.</p>
         <div class="linkVejaMais">
-          <a href="./invasion.php">Clique e veja mais.</a>
+          <a href="./invasion.php?post=3">Clique e veja mais.</a>
         </div>
       </div>
     </div>

@@ -49,6 +49,31 @@
   <section class='containerComments'>
     <h3>Comentários</h3>
     <ul>
+      <?php
+        include('./assets/modules/comments.php');
+      ?>
+    </ul>
+
+    <div class="newComment">
+      <h3>Novo Comentario</h3>
+      <form action="./assets/database/getNewComment.php" method='POST' >
+        <textarea name="newComment" ></textarea>
+        <div class="divButtons">
+          <button type="submit">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <?php include_once "./assets/modules/footer.php" ?>
+
+</body>
+</html>
+
+<!-- <h3>Comentários</h3>
+    <ul>
       <li>
         <h4>Fulano de tal</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptates. Exercitationem excepturi est nesciunt perspiciatis beatae. Cupiditate suscipit, placeat modi recusandae reiciendis eius itaque sed eveniet magnam amet architecto corrupti!
@@ -75,22 +100,4 @@
           <abbr title="Nao Gostei"><img class="dislike" src="./assets/img/btnLike.svg" alt=""></abbr>
         </div>
       </li>
-    </ul>
-
-    <div class="newComment">
-      <h3>Novo Comentario</h3>
-      <form action="./assets/database/getNewComment.php" method='POST' >
-        <textarea name="newComment" ></textarea>
-        <div class="divButtons">
-          <button type="submit">
-            Enviar
-          </button>
-        </div>
-      </form>
-    </div>
-  </section>
-
-  <?php include_once "./assets/modules/footer.php" ?>
-
-</body>
-</html>
+    </ul> -->
