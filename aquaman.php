@@ -57,6 +57,8 @@
     <div class="newComment">
       <h3>Novo Comentario</h3>
       <form action="./assets/modules/getNewComment.php" method='POST' >
+        <input type="text" name='id_post' value='1' style="display: none;">;
+       
         <textarea name="newComment" ></textarea>
         <div class="divButtons">
           <button type="submit">

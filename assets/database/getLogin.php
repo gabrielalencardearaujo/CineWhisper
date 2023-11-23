@@ -6,27 +6,20 @@
   $pass = md5($_POST['password']);
   $userValid = false;
 
-  $sql = "SELECT * FROM tb_users WHERE tb_users.email = ".$email." AND ".$pass." = tb_users.password";
+  $sql = "SELECT * FROM tb_users WHERE tb_users.email = ".$email." AND tb_users.password = ".$pass;
 
   $res = $conn->query(sql);
   $qtd = $res->num_rows;
 
-  if(qtd > 0) {
-    header('Location: ../../login.php?login=errorLogin');
-  } else if(qtd == 1) {
-    $userValid = true;
-  } else {
-    header('Location: ../../login.php?login=AlgoInesperadoAconteceu');
-  };
-
-  if(!$userValid) {
-    $_SESSION['authentication'] = 'nao';
-    $_SESSION['User'] = 'none';
-    header('Location: ../../login.php?login=errorLogin');
-  } else {
+  if(qtd == 1) {
+    $row = $res->fetch_Object();
     $_SESSION['authentication'] = 'sim';
-    $_SESSION['User'] = $email;
+    $_SESSION['name'] = $row->name;
     header('Location: ../../news.php');
-  }
+  } else {
+    $_SESSION['authentication'] = 'nao';
+    $_SESSION['name'] = 'none';
+    header('Location: ../../login.php?login=errorLogin');
+  };
 
   $conn->close();

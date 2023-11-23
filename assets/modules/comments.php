@@ -3,7 +3,10 @@
 
   $idPost = $_GET['post'];
 
-  $sql = "SELECT * FROM tb_comments WHERE id_post = ".$idPost;
+  $sql = "SELECT * FROM db_cinewhisper.tb_comments 
+  JOIN db_cinewhisper.tb_users ON tb_comments.id_user = tb_users.id_user
+  WHERE tb_comments.id_post = ".$idPost;
+
   $res = $conn->query($sql);
   $qtd = $res->num_rows;
 
@@ -13,9 +16,9 @@
   print "<p class=''>Sem Comentarios.</p>";
   } else {
     while($row = $res->fetch_Object()) {
-      print "<li>";
+      print "<li id='id_comment_".$row->id_comment."' >";
       print "<h4>". $row->name ."</h4>";
-      print "<p>". $row->comment ."</p>";
+      print "<p>". $row->textComment ."</p>";
       print "
         <div class='btnLikes'><abbr title='Gostei'>
           <img class='like' src='./assets/img/btnLike.svg' alt='Botao de Like'>

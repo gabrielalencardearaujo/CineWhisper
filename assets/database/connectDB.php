@@ -1,8 +1,8 @@
 <?php
   define('HOST', 'localhost'); 
   define('USER', 'root');        
-  define('PASSWORD', '');
-  define('BASE', 'somativa2_web');            
+  define('PASSWORD', 'biel123');
+  define('BASE', 'db_cinewhisper');            
 
   $conn = new mysqli(HOST, USER, PASSWORD, BASE);
   
