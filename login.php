@@ -16,7 +16,6 @@
         </div>
        
           <?php
-            session_start();
             if($_GET['login'] && $_GET['login'] == 'errorLogin') { ?>
               <div class="msgError">Usuario ou Senha invalidos.</div>
           <?php }?>
