@@ -21,7 +21,7 @@
         </li>
         <li>
           <?php 
-            if($_SESSION['authentication'] == 'nao') {
+            if($_SESSION['authentication'] && $_SESSION['authentication'] == 'nao') {
               include('./assets/modules/btnLogin.php');
             } else {
               include('./assets/modules/btnLogout.php');
