@@ -2,7 +2,6 @@
   include('./connectDB.php');
   session_start();
 
-  $form = $_POST;
   $name = $_POST['name'];
   $email = $_POST['email'];
   $password = md5($_POST['password']);

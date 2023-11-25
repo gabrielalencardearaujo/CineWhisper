@@ -1,11 +1,11 @@
 <?php 
   include('../database/connectDB.php');
   session_start();
-  $userLogin = $_SESSION['name'];
+  $userLogin = $_SESSION['User'];
   $textComment = $_POST['newComment'];
   $id_post = $_POST['id_post'];
 
-  $sql = "SELECT name, id_user FROM tb_users WHERE name = ".$userLogin;
+  $sql = "SELECT name, id_user FROM tb_users WHERE email = ".$userLogin;
   $res = $conn->query($sql);
   $row = $res->fetch_Object();
 
