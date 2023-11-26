@@ -11,14 +11,14 @@
     $row = $res->fetch_object();
     if (password_verify($password, $row->password)) { 
       $_SESSION['authentication'] = 'sim';
-      $_SESSION['name'] = $row->name;
+      $_SESSION['User'] = $row->name;
       header('Location: ../../news.php');
       exit(); 
     }
   }
 
   $_SESSION['authentication'] = 'nao';
-  $_SESSION['name'] = 'none';
+  $_SESSION['User'] = 'none';
   header('Location: ../../login.php?login=errorLogin');
   exit(); 
 
